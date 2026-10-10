@@ -32,8 +32,8 @@ All parameters are centrally managed in a single file:
 
 | Item | Current Value (Placeholder) | Owner Action Required |
 | :--- | :--- | :--- |
-| **Phone Number** | `+91 98765 43210` | Replace with manager's active phone number for calls |
-| **WhatsApp Number** | `919876543210` | Replace with manager's 10-digit WhatsApp number (prefixed with country code `91`) |
+| **Phone Number** | `+91 77029 69683` | ✅ Configured |
+| **WhatsApp Number** | `917702969683` | ✅ Configured (+91 77029 69683) |
 | **Email Address** | `ganeshmenshostel@example.com` | Update with hostel's official email address |
 | **Physical Address** | `Plot No. 42, 2nd Main Road...` | Enter real street, door number, area, city, and pincode |
 | **Landmark** | `Opposite Metro Station...` | Specify popular local landmark for residents |

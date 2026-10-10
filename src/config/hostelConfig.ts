@@ -95,10 +95,10 @@ export const HOSTEL_CONFIG: {
     hostelName: "Ganesh Mens Hostel",
     tagline: "Your Comfort, Our Priority",
     ownerName: "Hostel Manager",
-    phone: "+919876543210", // Placeholder to be replaced by owner
-    phoneFormatted: "+91 98765 43210",
-    whatsappNumber: "919876543210", // Format: country code + 10 digits
-    whatsappFormatted: "+91 98765 43210",
+    phone: "+917702969683",
+    phoneFormatted: "+91 77029 69683",
+    whatsappNumber: "917702969683", // Format: country code + 10 digits
+    whatsappFormatted: "+91 77029 69683",
     email: "ganeshmenshostel@example.com", // Placeholder
     address: {
       street: "Plot No. 42, 2nd Main Road, Near Tech Park / College Junction",
