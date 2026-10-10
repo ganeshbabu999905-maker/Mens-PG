@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="10" fill="#0c1726" />
+  <!-- stylized roof / hostel icon -->
+  <path d="M24 9L11 20H15V37H33V20H37L24 9Z" fill="#15253b" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" />
+  <!-- Bed icon inside -->
+  <path d="M18 30V26C18 24.8954 18.8954 24 20 24H28C29.1046 24 30 24.8954 30 26V30" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round" />
+  <circle cx="21" cy="27" r="1.5" fill="#f59e0b" />
+  <line x1="16" y1="33" x2="32" y2="33" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
+  <line x1="17" y1="33" x2="17" y2="36" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
+  <line x1="31" y1="33" x2="31" y2="36" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
+</svg>
