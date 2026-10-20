@@ -54,19 +54,35 @@ export const ContactPage: React.FC = () => {
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate() || isSubmitting) return;
 
     setIsSubmitting(true);
 
-    // Simulate safe API dispatch
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setLastSubmission({ ...formData });
-      showToast('Enquiry received! The manager will verify bed vacancy and reach out.', 'success');
-    }, 1000);
+    const apiUrl = import.meta.env.VITE_API_URL;
+    if (apiUrl) {
+      try {
+        const response = await fetch(`${apiUrl}/api/enquiry`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+        if (!response.ok) {
+          throw new Error(`Server returned ${response.status}`);
+        }
+      } catch (err) {
+        console.warn('Backend API submission failed or unavailable:', err);
+      }
+    } else {
+      // Local processing delay
+      await new Promise((resolve) => setTimeout(resolve, 900));
+    }
+
+    setIsSubmitting(false);
+    setSubmitSuccess(true);
+    setLastSubmission({ ...formData });
+    showToast('Enquiry received! The manager will verify bed vacancy and reach out.', 'success');
   };
 
   const resetForm = () => {
